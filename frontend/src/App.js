@@ -31,10 +31,12 @@ function App() {
   };
 
   return (
-    <div className="container">
-      <h1>User Management</h1>
-      <UserForm onAddUser={handleAddUser} />
-      <UserList users={users} onDeleteUser={handleDeleteUser} onUpdateUser={handleUpdateUser} />
+    <div className="min-h-screen bg-gray-100 p-6 flex justify-center">
+      <div className="max-w-4xl w-full bg-white shadow-lg rounded-lg p-8">
+        <h1 className="text-3xl  font-bold text-gray-800 mb-8 text-center">User Management</h1>
+        <UserForm onAddUser={handleAddUser} />
+        <UserList users={users} onDeleteUser={handleDeleteUser} onUpdateUser={handleUpdateUser} />
+      </div>
     </div>
   );
 }
